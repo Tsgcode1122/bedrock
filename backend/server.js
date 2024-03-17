@@ -24,7 +24,7 @@ app.use((err, req, res, next) => {
   res.status(500).send("Internal Server Error");
 });
 
-const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5003;
 app.listen(port, () => console.log(`Node Server Started using ${port}`));
 
 module.exports = app;
