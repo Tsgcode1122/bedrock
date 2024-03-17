@@ -53,7 +53,7 @@ export const Bookings = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:5001/api/bookings/getallbookings/",
+          "http://localhost:5003/api/bookings/getallbookings/",
         );
         console.log(response.data);
         setBookings(response.data);
@@ -116,7 +116,7 @@ export const Rooms = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:5001/api/rooms/getallrooms/",
+          "http://localhost:5003/api/rooms/getallrooms/",
         );
         console.log(response.data);
         setRooms(response.data);
@@ -179,7 +179,7 @@ export const Users = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          "http://localhost:5001/api/users/getallusers/",
+          "http://localhost:5003/api/users/getallusers/",
         );
         console.log(response.data);
         setUsers(response.data);

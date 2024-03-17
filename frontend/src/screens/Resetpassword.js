@@ -18,7 +18,7 @@ const Resetpassword = () => {
 
       // Check if email exists
       const response = await axios.post(
-        "http://localhost:5001/api/users/checkemail",
+        "http://localhost:5003/api/users/checkemail",
         { email },
         setErrorMessage(""),
       );
@@ -48,7 +48,7 @@ const Resetpassword = () => {
       };
 
       const result = await axios.post(
-        "http://localhost:5001/api/users/reset",
+        "http://localhost:5003/api/users/reset",
         user,
       );
       localStorage.setItem("currentUser", JSON.stringify(result.data));

@@ -47,7 +47,7 @@ export const MyBookings = () => {
       try {
         setLoading(true);
         const response = await axios.post(
-          "http://localhost:5001/api/bookings/getbookingsbyuserid/",
+          "http://localhost:5003/api/bookings/getbookingsbyuserid/",
           {
             userid: user._id,
           },
@@ -68,7 +68,7 @@ export const MyBookings = () => {
     try {
       setLoading(true);
       const result = await axios.post(
-        "http://localhost:5001/api/bookings/cancelbooking",
+        "http://localhost:5003/api/bookings/cancelbooking",
         { bookingid, roomid },
       );
       console.log("result:", result.data);
